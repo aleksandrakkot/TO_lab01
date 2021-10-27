@@ -15,15 +15,15 @@ public class UserInput {
 
     public void getDataFromUser()
     {
-        System.out.println("Poda kod waluty 1");
+        System.out.println("Podaj kod waluty 1");
         code1 = scan.nextLine();
-        System.out.println("Poda kod waluty 2");
+        System.out.println("Podaj kod waluty 2");
         code2 = scan.nextLine();
         System.out.println("Podaj kwote w walucie 1");
         GetValidValue();
     }
 
-    private void GetValidValue()
+    private void GetValidValue()  //zabezpieczenie w przypadku podania złej waluty
     {
         boolean success = false;
         while(!success)
